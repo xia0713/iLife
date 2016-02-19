@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/gainsboro" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:id="@+id/myquestion_item_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提问了:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_content1" />
+
+        <TextView
+            android:id="@+id/myquestion_item_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myquestion_item_title_tv"
+            android:layout_marginTop="2dp"
+            android:text="1小时"
+            android:textColor="#bfbfbf"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/myquestion_item_more"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/myquestion_item_more_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/list_edit_selector" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myquestion_item_solve"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/list_solve_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/myquestion_item_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myquestion_item_time_tv"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="测试：的说法拉克将拉动上空间发的是快乐减肥的事故的四川北"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_content1" />
+
+        <RelativeLayout
+            android:id="@+id/myquestion_item_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myquestion_item_content_tv"
+            android:layout_marginTop="8dp" >
+
+            <ImageView
+                android:id="@+id/myquestion_item_label_iv"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/list_tag"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/myquestion_item_label_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/myquestion_item_label_iv"
+                android:text="营增改"
+                android:textColor="#4CA1F4" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/myquestion_item_status_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/myquestion_item_label"
+            android:text="待回答"
+            android:textColor="#bfbfbf" />
+    </RelativeLayout>
+
+</LinearLayout>

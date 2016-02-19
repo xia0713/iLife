@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/tv_question_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#bfbfbf" />
+
+            <TextView
+                android:id="@+id/tv_question_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_question_date"
+                android:layout_marginTop="8dp"
+                android:maxLines="99"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="@dimen/textsize16sp" />
+
+            <TextView
+                android:id="@+id/tv_question_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_question_title"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="2dp"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/question_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_question_content"
+                android:layout_marginTop="8dp" >
+
+                <ImageView
+                    android:id="@+id/iv_question_label"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/list_tag"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/tv_question_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_question_label"
+                    android:text="营增改"
+                    android:textColor="#4CA1F4" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/question_secore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_question_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/question_label"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/iv_question_score"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/list_credit_icon"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/tv_question_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/iv_question_score"
+                    android:text=""
+                    android:textColor="@color/gray" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/question_label"
+                android:background="@drawable/selector_green_btn"
+                android:paddingBottom="8dp"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:paddingTop="8dp"
+                android:text="添加回答"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#bfbfbf" />
+
+        <TextView
+            android:id="@+id/tv_answer_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:text=""
+            android:textColor="#bfbfbf"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_answer_not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECECEC"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="4dp"
+            android:text="还没有人回答"
+            android:textColor="#bfbfbf" />
+    </LinearLayout>
+
+</ScrollView>

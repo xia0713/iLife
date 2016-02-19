@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RadioGroup
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/indexbottom_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:background="@drawable/tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/index_radio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/index_status"
+            android:button="@null"
+            android:paddingLeft="0dp"
+            android:textColor="@drawable/botton_textcolor_selector" />
+
+        <RadioButton
+            android:id="@+id/find_radio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/find_status"
+            android:button="@null"
+            android:paddingLeft="0dp" />
+
+        <RadioButton
+            android:id="@+id/ask_radio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ask_status"
+            android:button="@null"
+            android:paddingLeft="0dp" />
+
+        <RadioButton
+            android:id="@+id/answer_radio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/answer_status"
+            android:button="@null"
+            android:paddingLeft="0dp" />
+
+        <RadioButton
+            android:id="@+id/mine_radio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/mine_status"
+            android:button="@null"
+            android:paddingLeft="0dp" />
+    </RadioGroup>
+

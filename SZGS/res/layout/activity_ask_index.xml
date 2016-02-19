@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_login"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/hearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/footerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_ask_selectzq"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/white_button"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="选择专区" />
+
+        <TextView
+            android:id="@+id/tv_ask_userxs"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/white_button"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="使用悬赏" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footerlayout"
+        android:layout_below="@id/hearlayout"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/question_title"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="描述您的问题"
+            android:padding="10dp" />
+        
+    </LinearLayout>
+
+</RelativeLayout>

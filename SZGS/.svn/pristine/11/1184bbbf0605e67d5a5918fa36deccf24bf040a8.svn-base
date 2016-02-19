@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/question_detail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:pull="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/new_question_pull"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/question_detail_header"
+        android:background="#f2f2f2"
+        pull:ptrAnimationStyle="flip"
+        pull:ptrHeaderBackground="@android:color/transparent"
+        pull:ptrHeaderTextAppearance="@style/LoadingMoreTextAppearance"
+        pull:ptrSubHeaderTextAppearance="@style/LoadingMoreTextAppearance" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/answer_new_default_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="今天还未有人发表问题呢！"
+            android:textColor="@color/gray" />
+    </LinearLayout>
+
+</RelativeLayout>

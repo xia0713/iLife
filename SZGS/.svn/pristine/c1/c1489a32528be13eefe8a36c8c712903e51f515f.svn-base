@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app1="http://schemas.android.com/apk/res/com.szgs.bbs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/question_detail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+    <ImageView
+        android:id="@+id/imgview_add"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/question_detail_header"
+        android:background="@drawable/tag_edit_icon"
+        android:visibility="gone" />
+
+    <com.szgs.bbs.common.view.ViewPagerIndicator
+        android:id="@+id/interesting_tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/question_detail_header"
+        android:layout_toLeftOf="@id/imgview_add"
+        android:background="#F7F7F7"
+        android:paddingBottom="5dp"
+        app1:pstsIndicatorColor="#4CA1F2"
+        app1:pstsIndicatorHeight="3dp" >
+    </com.szgs.bbs.common.view.ViewPagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/interesting_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/interesting_tab" />
+ <LinearLayout 
+      android:id="@+id/not_interest_notice"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+     >
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="您还未添加感兴趣的问题"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/gray"/>
+    <TextView 
+        android:id="@+id/tv_addinterest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:text="轻触添加"
+         android:textColor="@color/white"
+         android:gravity="center"
+         android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+         android:background="@drawable/blue_button"
+        />
+</LinearLayout>
+</RelativeLayout>

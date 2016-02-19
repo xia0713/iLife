@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/myquestion_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/li_my_ask"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_ask_default_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="有不懂？就要问"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/li_my_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_collection_default_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="看到优秀的回答，请点击收藏哦！"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:pull="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myanswer_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myquestion_header"
+        android:dividerHeight="@null"
+        pull:ptrAnimationStyle="flip"
+        pull:ptrHeaderBackground="@android:color/transparent"
+        pull:ptrHeaderTextAppearance="@style/LoadingMoreTextAppearance"
+        pull:ptrMode="both"
+        pull:ptrSubHeaderTextAppearance="@style/LoadingMoreTextAppearance" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</RelativeLayout>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.szgs.bbs"
+    android:versionCode="3"
+    android:versionName="1.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.szgs.bbs.LggsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/MyAppTheme" >
+        <activity
+            android:name="com.szgs.bbs.ui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.index.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.szgs.bbs.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.szgs.bbs.BaseActivity" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.GbdemoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.IncludeBaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.daohang.StartActivity"
+            android:label="@string/title_activity_start"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.find.FindActivity"
+            android:label="@string/title_activity_find"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.AnswerIndexActivity"
+            android:label="@string/title_activity_answer_index"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.RankListActivity"
+            android:label="@string/title_activity_rank_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.AskIndexActivity"
+            android:label="@string/title_activity_ask_index"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ui.TabsActivity"
+            android:label="@string/title_activity_tabs"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.RegisterSetNameActivity"
+            android:label="@string/title_activity_register_set_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.ForgotPwdActivity"
+            android:label="@string/title_activity_forgot_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.ForgotPwdSecondActivity"
+            android:label="@string/title_activity_forgot_pwd_second"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.index.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.MineTaskActivity"
+            android:label="@string/title_activity_mine_task"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.SetActivity"
+            android:label="@string/title_activity_set"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.AskFirstActivity"
+            android:label="@string/title_activity_ask_first"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MyQuestionsActivity"
+            android:label="@string/title_activity_my_questions"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.NotificationActivity"
+            android:label="@string/title_activity_notification"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.find.FindListActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.MyInterestingQuestionActivity"
+            android:label="@string/title_activity_my_interesting_question"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.TheLatestQuestionsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.HighMarkForActivity"
+            android:label="@string/title_activity_high_mark_for"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.ExpiryActivity"
+            android:label="@string/title_activity_expiry"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.find.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ui.AddAnswerActivity"
+            android:label="@string/title_activity_add_answer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MyAnswerActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MyCollectionActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MyInfoSettingActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.ChangeUsernameAcitvity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.ChangePwdActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.AboutActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.QuestionDetailActivity"
+            android:label="@string/title_activity_common_question_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ui.OtherUserInformationActivity"
+            android:label="@string/title_activity_other_user_information"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.CreditExchangeActivity"
+            android:label="@string/title_activity_find_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.ExchangeInfoActivity"
+            android:label="@string/title_activity_find_list"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.SelectInterestQuesActivity"
+            android:label="@string/title_activity_select_interest_ques"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.SelectInterestQuesActivity2"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.AnswerDetailActivity"
+            android:label="@string/title_activity_answer_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.AnswerOrCommentActivity"
+            android:label="@string/title_activity_answer_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.CommentListActivity"
+            android:label="@string/title_activity_answer_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.UserAgreeMentActivity"
+            android:label="@string/title_activity_user_agree_ment"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ui.SelectLoginorRegisActivity"
+            android:label="@string/title_activity_select_loginor_regis" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.TaskActivity"
+            android:label="@string/title_activity_mine_task"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service android:name="com.avos.avoscloud.PushService" />
+        <!-- 为了让应用能在关闭的情况下也可以收到推送 -->
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.szgs.bbs.receiver.CustomReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.avos.UPDATE_STATUS" />
+                <action android:name="com.szgs.answer" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.szgs.bbs.mine.NotifacationSetActivity"
+            android:label="@string/title_activity_notifacation_set" >
+        </activity>
+    </application>
+
+</manifest>

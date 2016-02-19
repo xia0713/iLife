@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<requestType>https</requestType>
+	<host>192.168.1.1</host>
+	<port>9002</port>
+	<encryptdata>true</encryptdata>
+	<LoginActivity>com.lggs.bbs.LoginActivity</LoginActivity>
+	<loginInMethod>lggs/login_v1</loginInMethod>
+	<HomeActivity>com.lggs.bbs.HomeActivity</HomeActivity>
+	<fontSize>15px</fontSize>
+</config>

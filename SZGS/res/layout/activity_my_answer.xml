@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <include
+        android:id="@+id/myanswer_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:pull="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myanswers_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myanswer_header"
+        android:dividerHeight="@null"
+        pull:ptrAnimationStyle="flip"
+        pull:ptrHeaderBackground="@android:color/transparent"
+        pull:ptrHeaderTextAppearance="@style/LoadingMoreTextAppearance"
+        pull:ptrMode="pullFromEnd"
+        pull:ptrSubHeaderTextAppearance="@style/LoadingMoreTextAppearance" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <LinearLayout
+        android:id="@+id/li_share_myasw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/me_answer_default_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="快去分享你积累的知识吧！"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

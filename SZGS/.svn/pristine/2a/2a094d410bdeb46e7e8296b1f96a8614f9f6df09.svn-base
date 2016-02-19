@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">问税你我帮</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="version_name">1.0</string>
+    <string name="title_activity_mine">MineActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="desc"></string>
+    <string name="dev_company">由深圳市建乔无线信息技术有限公司开发</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_find">FindActivity</string>
+    <string name="title_activity_answer_index">AnswerIndexActivity</string>
+    <string name="title_activity_rank_list">RankListActivity</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_ask_index">AskIndexActivity</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="title_activity_register_set_name">RegisterSetNameActivity</string>
+    <string name="title_activity_forgot_pwd">ForgotPwdActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_forgot_pwd_second">ForgotPwdSecondActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_mine_task">MineTaskActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="title_activity_ask_first">AskFirstActivity</string>
+    <string name="title_activity_my_questions">MyQuestionsActivity</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="title_activity_find_list">FindListActivity</string>
+    <string name="title_activity_the_new_questions">TheNewQuestionsActivity</string>
+    <string name="title_activity_my_interesting_question">MyInterestingQuestion</string>
+    <string name="title_activity_high_mark_for">HighMarkForActivity</string>
+    <string name="title_activity_expiry">ExpiryActivity</string>
+    <string name="title_activity_category">CategoryActivity</string>
+    <string name="title_activity_add_answer">AddAnswerActivity</string>
+    <string name="title_activity_common_question_detail">CommonQuestionDetailActivity</string>
+    <string name="title_activity_other_user_information">OtherUserInformationActivity</string>
+    <string name="title_activity_select_interest_ques">SelectInterestQuesActivity</string>
+    <string name="title_activity_answer_detail">AnswerDetailActivity</string>
+    <string name="network_connection_error">网络连接错误</string>
+    <string name="title_activity_user_agree_ment">UserAgreeMentActivity</string>
+    <string name="title_activity_select_loginor_regis">SelectLoginorRegisActivity</string>
+    <string name="title_activity_notifacation_set">NotifacationSetActivity</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/header_bg"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/home_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingBottom="5dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="17dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/navbar_notification_selector" />
+       <ImageView
+            android:id="@+id/home_notification_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:paddingBottom="5dp"
+            android:layout_marginLeft="35dp"
+            android:paddingTop="5dp"
+            android:visibility="gone"
+            android:src="@drawable/navbar_red_dot" />
+
+        <com.szgs.bbs.common.view.DrawableCenterTextView
+            android:id="@+id/home_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/home_notification"
+            android:background="@drawable/search_bar"
+            android:drawableLeft="@drawable/navbar_search_selector"
+            android:drawablePadding="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="搜索"
+            android:textSize="@dimen/textsize_content1"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:pull="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/home_pull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_layout"
+        android:divider="@null"
+        pull:ptrAnimationStyle="flip"
+        pull:ptrHeaderBackground="@android:color/transparent"
+        pull:ptrHeaderTextAppearance="@style/LoadingMoreTextAppearance"
+        pull:ptrMode="both"
+        pull:ptrSubHeaderTextAppearance="@style/LoadingMoreTextAppearance" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

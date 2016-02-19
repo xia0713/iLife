@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.szgs.bbs.common.view.CircleImageView
+        android:id="@+id/comment_list_item_avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/list_avatar_default" />
+
+    <TextView
+        android:id="@+id/comment_list_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/comment_list_item_avatar"
+        android:layout_toRightOf="@id/comment_list_item_avatar"
+        android:text="用户名"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/comment_list_item_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/comment_list_item_avatar"
+        android:layout_toRightOf="@id/comment_list_item_avatar"
+        android:text="1 hour"
+        android:textColor="#bfbfbf"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/comment_list_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_list_item_avatar"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/comment_list_item_avatar"
+        android:text="测试：将放大了三季度佛奥发动机偶看到解放空间哦卡萨金风科技"
+        android:textColor="#525252" />
+
+
+</RelativeLayout>

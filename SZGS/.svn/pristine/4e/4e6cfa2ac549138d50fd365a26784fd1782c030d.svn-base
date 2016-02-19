@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:pull="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        pull:ptrAnimationStyle="flip"
+        pull:ptrHeaderBackground="@android:color/transparent"
+        pull:ptrHeaderTextAppearance="@style/LoadingMoreTextAppearance"
+        pull:ptrMode="both"
+        pull:ptrSubHeaderTextAppearance="@style/LoadingMoreTextAppearance" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+ <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/navbar_notification_pre" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="暂无新动态"
+            android:textColor="#7f7f7f"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

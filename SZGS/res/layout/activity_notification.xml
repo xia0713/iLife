@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <RadioGroup
+            android:id="@+id/notification_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/notification_answer_rb"
+                style="@style/NotifaAnswer.RadioButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:padding="7dp"
+                android:text="回答我的" />
+
+            <!-- <RadioButton
+                android:id="@+id/notification_comment_rb"
+                style="@style/NotifaComment.RadioButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="评论我的" /> -->
+
+            <RadioButton
+                android:id="@+id/notification_system_rb"
+                style="@style/NotifaSystem.RadioButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:text="系统 " />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/notification_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

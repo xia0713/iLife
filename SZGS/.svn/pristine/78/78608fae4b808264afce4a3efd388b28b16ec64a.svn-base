@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lggs.bbs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.szgs.bbs.LggsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/JQAppTheme" >
+        <activity
+            android:name="com.szgs.bbs.ui.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.index.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.szgs.bbs.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.szgs.bbs.BaseActivity" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.GbdemoActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.IncludeBaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.TestActivity"
+            android:label="@string/title_activity_test" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.daohang.StartActivity"
+            android:label="@string/title_activity_start" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.find.FindActivity"
+            android:label="@string/title_activity_find" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.AnswerIndexActivity"
+            android:label="@string/title_activity_answer_index" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.RankListActivity"
+            android:label="@string/title_activity_rank_list" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.AskIndexActivity"
+            android:label="@string/title_activity_ask_index"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ui.TabsActivity"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.RegisterSetNameActivity"
+            android:label="@string/title_activity_register_set_name" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.ForgotPwdActivity"
+            android:label="@string/title_activity_forgot_pwd" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.register.ForgotPwdSecondActivity"
+            android:label="@string/title_activity_forgot_pwd_second" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.index.SearchActivity"
+            android:label="@string/title_activity_search" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.answer.MineTaskActivity"
+            android:label="@string/title_activity_mine_task" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.SetActivity"
+            android:label="@string/title_activity_set" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.ask.AskFirstActivity"
+            android:label="@string/title_activity_ask_first" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.MyQuestionsActivity"
+            android:label="@string/title_activity_my_questions" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.mine.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+        </activity>
+        <activity
+            android:name="com.szgs.bbs.find.FindListActivity"
+            android:label="@string/title_activity_find_list" >
+        </activity>
+    </application>
+
+</manifest>
